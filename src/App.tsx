@@ -7,7 +7,7 @@ import TodoFooter from './components/TodoFooter';
 import { Todo } from './shared/models';
 import { addTodo, toggleTodo, deleteTodo } from './utils/todoFunctions';
 
-const TodoApp: React.FC = () => {
+const App: React.FC = () => {
   const [todos, setTodos] = useState<Todo[]>(() => {
     const savedTodos = localStorage.getItem('todos');
     return savedTodos ? JSON.parse(savedTodos) : [];
@@ -48,5 +48,5 @@ const TodoApp: React.FC = () => {
   );
 };
 
-export default TodoApp;
+export default App;
 
