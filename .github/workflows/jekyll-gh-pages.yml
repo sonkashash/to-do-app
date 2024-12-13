@@ -31,7 +31,6 @@ jobs:
         run: |
           gem install bundler
           bundle install
-        working-directory: . # Ensure the working directory is set to the root of the repository
 
       - name: Build with Jekyll
         run: bundle exec jekyll build --destination ./_site
